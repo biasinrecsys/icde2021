@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177779800-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-177779800-1');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Countering Bias in Personalized Rankings: From Data Engineering to Algorithm Development</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/venobox/venobox.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--==========================
+  Header
+============================-->
+<header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <h1><a href="#intro">BiasInRecSys</a></h1>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="#abstract">Introduction</a></li>
+                <li><a href="#audience">Target Audience</a></li>
+                <li><a href="#structure">Outline</a></li>
+                <li><a href="#resources">Material</a></li>
+                <li><a href="#organizers">Presenters</a></li>
+                <li><a href="https://icde2021.gr/ieee-icde2021-a-fully-virtual-event/">Registration</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#editions">Past Editions</a></li>
+            </ul>
+        </nav><!-- #nav-menu-container -->
+    </div>
+</header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+<section id="intro">
+    <div class="intro-container wow fadeIn">
+        <h1 class="mb-4 pb-0">Tutorial on Countering Bias in Personalized Rankings <br/> From Data Engineering to Algorithm Development</h1>
+        <p class="mb-4 pb-0">to be held as part of the <u><a href="https://icde2021.gr/" target="_blank">37th IEEE International Conference on Data Engineering (ICDE2021)</a></u></p>
+        <p class="mb-4 pb-0">April 19 - 22, 2021 - ONLINE </p>
+    </div>
+</section>
+
+<main id="main">
+
+    <!--==========================
+    Introduction Section
+    ============================-->
+    <section id="abstract" class="wow fadeInUp">
+
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>Introduction</h2>
+                <p>
+                    This tutorial provides the ICDE community with recent advances on the <strong>assessment</strong> and <strong>mitigation</strong>
+                    of <strong>data and algorithmic bias</strong> in <strong>personalized rankings</strong>. We first introduce conceptual foundations,
+                    by surveying the state of the art and describing <strong>real-world examples</strong> of how bias can impact ranking algorithms from
+                    several perspectives (e.g., ethics and system's objectives). Biases can arise in different forms and circumstances, and those leading
+                    to <strong>unfairness</strong> are just one type among the multitude <strong>biases</strong> affecting our <strong>data engineering processes</strong>
+                    (e.g., popularity biases, cognitive biases).
+                </p>
+
+                <p>
+                    After presenting a broad taxonomy of biases, this tutorial continues with a systematic
+                    presentation of <strong>techniques</strong> to uncover, assess, and reduce each type of bias along the personalized ranking design process,
+                    giving a primary focus on the role of data engineering in each step of the pipeline. Hands-on parts provide attendees with <strong>implementations</strong>
+                    of <strong>bias mitigation algorithms</strong>, in addition to processes and guidelines on how data is organized and manipulated by these
+                    algorithms, leveraging <strong>open-source tools</strong> and <strong>public datasets</strong>; in this part, attendees are engaged in the
+                    design of bias countermeasures and in articulating <strong>impacts on stakeholders</strong>. The tutorial finally analyzes <strong>open issues</strong>
+                    and <strong>future directions</strong> in this vibrant and rapidly evolving research area.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========================
+    Target Audience Section
+    ============================-->
+
+    <section id="audience" class="wow fadeInUp section-with-bg" style="padding: 60px 0 30px 0;">
+
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>Target Audience</h2>
+
+                <p>
+                    This tutorial is accessible to <strong>researchers</strong>, <strong>industry technologists</strong> and <strong>practitioners</strong>. For people not familiar with rankings,
+                    this tutorial covers  necessary background material. No prior knowledge on biases is assumed. Basic knowledge of <strong>Python</strong>
+                    programming and of quite common libraries, such as Pandas and NumPy, is preferred but not strictly necessary. One aspect
+                    relevant from the outline is that bias is a <strong>highly interdisciplinary topic</strong>, touching on several dimensions beyond algorithms.
+                    Hence, our tutorial is of interest for an interdisciplinary audience, with different backgrounds, beyond the information
+                    retrieval community. Our tutorial will cover <strong>fundamental notions of bias and fairness</strong> which can be potentially of interest also
+                    for those who are working on <strong>data engineering in other areas</strong> (e.g., machine learning, security, social networks).
+                </p>
+                <p>
+                    Our tutorial is tailored around the ICDE community, thus focusing more on <strong>data engineering processes</strong> to be shaped to characterize
+                    and mitigate biases. Thanks to our tutorial, ICDE attendees will understand <strong>key aspects of bias</strong> in personalized
+                    rankings, materialize biases into underlying systems, play with mitigation and articulate impacts on stakeholders, identify
+                    <strong>challenges</strong> and <strong>opportunities</strong>.
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========================
+    Outline Section
+    ============================-->
+    <section id="structure" class="wow fadeInUp">
+
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>Outline</h2>
+
+                <p>Due to the ongoing worldwide COVID-19 situation, ICDE 2021 will take place as a hybrid event.</p>
+
+                <p>TBD</p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========================
+    Material Section
+    ============================-->
+    <section id="resources" class="wow fadeInUp section-with-bg">
+
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>Material</h2>
+
+                <p>Lecture slides, Github repository, and Jupyter notebooks will be made available to attendees before the tutorial.</p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========================
+    Presenters Section
+    ============================-->
+    <section id="organizers" class="wow fadeInUp">
+
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>Presenters</h2>
+
+                <p style="text-align: center;"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQH12B2k5FNOPg/profile-displayphoto-shrink_200_200/0?e=1610582400&v=beta&t=_5w50uZ6yLEIcaAJBNSsOBLsGqAebfu5vR2XeF0RkQQ" class="img-rounded" alt="Ludovico Boratto" style="width:200px;"></p>
+                <p style="text-align: center;"><strong><a href="https://www.ludovicoboratto.com/" target="_blank">Ludovico Boratto</a> </br>EURECAT - Centre Tecn&ograve;logic de Catalunya (Spain)</strong></p>
+                <p>Ludovico Boratto is Senior Research Scientist in at EURECAT. His research focuses on recommender systems and on their impact on stakeholders. His research has been published in top-tier conferences and journals. He is editor of the book "Group Recommender Systems: An Introduction" (Springer). He is editorial board member of the "Information Processing &amp; Management" journal (Elsevier) and guest editor of other special issues. He is regularly PC member of the main Data Mining conferences. In 2012, he got a Ph.D. at the University of Cagliari, where he was research assistant until May 2016.</p>
+                <br/><br/>
+                <p style="text-align: center;"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQET4nEbq071jg/profile-displayphoto-shrink_200_200/0?e=1610582400&v=beta&t=AlBtrzr2bZREY-F4zeviitDg-b9gzqFMV4yUjseR50k" class="img-rounded" alt="Mirko Marras" style="width:200px;"></p>
+                <p style="text-align: center;"><strong><a href="https://www.mirkomarras.com/" target="_blank">Mirko Marras</a> </br>École Polytechnique Fédérale de Lausanne EPFL (Switzerland)</strong></p>
+                <p>Mirko Marras is Postdoctoral Researcher at the École Polytechnique Fédérale de Lausanne EPFL. His research focuses on data mining and machine learning for recommender systems, with attention to bias issues, mainly under online education settings. He authored papers in top-tier journals, such as Pattern Recognition Letters and Computers Human Behavior. He gave talks and demos at international conferences and workshops, e.g., TheWebConf2018, ECIR2019, and INTERSPEECH2019. He is PC member of major conferences, e.g., ACL, AIED, EDM, ECML-PKDD, EMNLP, ITICSE, ICALT, UMAP. He co-chaired the BIAS workshop at ECIR 2020 and 2021 and gave tutorials on Bias in Recommender Systems at UMAP2020 and ICDM2020. In 2020, he received a Doctoral Degree from University of Cagliari.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========================
+    Contacts Section
+    ============================-->
+    <section id="contacts" class="wow fadeInUp section-with-bg">
+
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>Contacts</h2>
+                <p>Please, reaching out to us at <strong>ludovico.boratto@acm.org</strong> and <strong>mirko.marras@epfl.ch</strong>.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========================
+    Editions Section
+    ============================-->
+    <section id="editions" class="wow fadeInUp">
+
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>Past Editions</h2>
+                <p>We also invite you to check out previous editions of our similar tutorials:</p>
+                <ul>
+                    <li><a href="https://biasinrecsys.github.io/umap2020" target="_blank">UMAP 2020 Hands-on on Data and Algorithmic Bias in Recommender Systems</a></li>
+                    <li><a href="https://biasinrecsys.github.io/icdm2020" target="_blank">ICDM 2020 Bias in Personalized Rankings: Concepts to Code</a></li>
+                    <li><a href="https://biasinrecsys.github.io/wsdm2021" target="_blank">WSDM 2021 Advances in Bias-aware Recommendation on the Web</a></li>
+                    <li><a href="https://biasinrecsys.github.io/ecir2021-tutorial" target="_blank">ECIR 2021 Operationalizing Treatments against Bias: Challenges and Solutions</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+</main>
+
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/venobox/venobox.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
